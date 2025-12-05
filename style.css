@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --commonblack: rgba(0, 0, 0, 0.693);
+    }
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto Condensed";
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    height: inherit;
+}
+
+header{
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--commonblack);
+    padding: 10px 0;
+    box-shadow: 0 0 30px var(--commonblack);
+}
+
+
+header img{
+    height: 90%;
+    filter: invert(100);
+}
+
+#login{
+    height: calc(100% - 5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#login-form{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 40vh;
+    padding: 0 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+
+#login-form a{
+    color: rgb(0, 0, 0);
+}
+
+#login-form a[href="cadastro.html"]{
+    border: 2px solid var(--commonblack);
+    height: 38px;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#login-form button{
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+    padding: 0 30px;
+    border: none;
+    background-color: var(--commonblack);
+    color: white;
+}
+
+#login-form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+
+#login-form div input{
+    height: 2rem;
+    border: none;
+    border-bottom: 2px solid var(--commonblack);
+    color: var(--commonblack);
+    width: 100%;
+}
+
+#login-form div img{
+    background-color: var(--commonblack);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+
